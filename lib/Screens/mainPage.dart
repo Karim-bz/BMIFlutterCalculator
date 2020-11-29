@@ -1,6 +1,8 @@
 import 'dart:ffi';
+import 'package:bmifluttercalculator/Screens/resultPage.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -293,6 +295,7 @@ class _MainPageViewState extends State<MainPageView> {
                   padding: EdgeInsets.all(15),
                   onPressed: () {
                     /*...*/
+                    Get.to(ResultPage());
                   },
                   child: Text(
                     "CALCULATE",

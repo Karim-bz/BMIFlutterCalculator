@@ -1,4 +1,5 @@
 import 'package:bmifluttercalculator/Screens/mainPage.dart';
+import 'package:bmifluttercalculator/Screens/resultPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,6 +14,7 @@ void main() {
     defaultTransition: Transition.zoom,
     getPages: [
       GetPage(name: '/main', page: () => MainPage()),
+      GetPage(name: '/result', page: () => ResultPage()),
     ],
   ));
 }
